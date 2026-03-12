@@ -94,19 +94,27 @@ function setDelay(){
         sec3ItemBox[6].setAttribute("data-aos-delay", "50");
         sec3ItemBox[7].setAttribute("data-aos-delay", "100");
 
-    } else if(window.innerWidth <= 1024){
+    } else if(window.innerWidth >= 721 && window.innerWidth <= 1024){
+        sec3ItemBox[2].setAttribute("data-aos-delay", "150");
         sec3ItemBox[3].setAttribute("data-aos-delay", "50");
+        
         sec3ItemBox[4].setAttribute("data-aos-delay", "100");
         sec3ItemBox[5].setAttribute("data-aos-delay", "150");
     } else{
+        sec3ItemBox[2].setAttribute("data-aos-delay", "150");
         sec3ItemBox[3].setAttribute("data-aos-delay", "200");
+
         sec3ItemBox[4].setAttribute("data-aos-delay", "50");
         sec3ItemBox[5].setAttribute("data-aos-delay", "100");
+
+        sec3ItemBox[6].setAttribute("data-aos-delay", "150");
+        sec3ItemBox[7].setAttribute("data-aos-delay", "200");
     }
 
     AOS.refresh();
 }
 
 setDelay();
+
 
 window.addEventListener('resize', setDelay);
