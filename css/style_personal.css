@@ -1727,6 +1727,10 @@ footer {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 row-gap: 10px;
+
+                & > .sec6_item_box:last-child {
+                    display: none;
+                }
             }
         }
 
@@ -1766,3 +1770,4 @@ footer {
         }
     }
 }
+
